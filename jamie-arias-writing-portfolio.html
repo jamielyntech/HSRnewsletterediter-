@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jamie Arias — Writing & Editorial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#221E1C;
+    --muted:#71685E;
+    --line:#DFD7C9;
+    --cream:#FAF6EF;
+    --wine:#7A2A2E;
+    --brass:#A9782E;
+    --sage:#6E7A5C;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-font-smoothing:antialiased;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Lora', serif;
+    line-height:1.6;
+  }
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+  header{
+    padding:64px 0 40px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .eyebrow{
+    font-family:'Poppins', sans-serif;
+    font-size:12px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--muted);
+    font-weight:500;
+    margin:0 0 14px 0;
+  }
+  h1{
+    font-family:'Lora', serif;
+    font-weight:600;
+    font-size:38px;
+    line-height:1.15;
+    margin:0 0 10px 0;
+    color:var(--ink);
+  }
+  .role{
+    font-family:'Poppins', sans-serif;
+    font-size:14px;
+    color:var(--muted);
+    margin:0 0 22px 0;
+  }
+  .intro{
+    font-size:17px;
+    line-height:1.7;
+    max-width:600px;
+    margin:0;
+    color:var(--ink);
+  }
+  .intro em{
+    font-style:italic;
+    color:var(--muted);
+  }
+
+  section.samples{
+    padding:44px 0 20px 0;
+  }
+  .samples-label{
+    font-family:'Poppins', sans-serif;
+    font-size:12px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--muted);
+    font-weight:500;
+    margin:0 0 24px 0;
+  }
+
+  .card{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:26px 28px;
+    margin-bottom:18px;
+    background:#FFFEFB;
+    transition:border-color 0.15s ease, transform 0.15s ease;
+  }
+  .card:hover{
+    border-color:var(--accent, var(--ink));
+    transform:translateY(-1px);
+  }
+  .swatch{
+    width:28px;
+    height:3px;
+    margin-bottom:14px;
+  }
+  .card-1 .swatch{ background:var(--wine); }
+  .card-2 .swatch{ background:var(--brass); }
+  .card-3 .swatch{ background:var(--sage); }
+  .card-1:hover{ border-color:var(--wine); }
+  .card-2:hover{ border-color:var(--brass); }
+  .card-3:hover{ border-color:var(--sage); }
+
+  .card-title{
+    font-family:'Lora', serif;
+    font-weight:600;
+    font-style:italic;
+    font-size:19px;
+    line-height:1.4;
+    margin:0 0 8px 0;
+    color:var(--ink);
+  }
+  .card-context{
+    font-family:'Poppins', sans-serif;
+    font-size:11.5px;
+    letter-spacing:0.04em;
+    color:var(--muted);
+    margin:0 0 12px 0;
+  }
+  .card-proves{
+    font-family:'Poppins', sans-serif;
+    font-size:13.5px;
+    line-height:1.6;
+    color:var(--ink);
+    margin:0 0 14px 0;
+  }
+  .card-proves b{
+    font-weight:600;
+  }
+  .card-cta{
+    font-family:'Poppins', sans-serif;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:0.03em;
+  }
+  .card-1 .card-cta{ color:var(--wine); }
+  .card-2 .card-cta{ color:var(--brass); }
+  .card-3 .card-cta{ color:var(--sage); }
+
+  footer{
+    padding:36px 0 60px 0;
+    border-top:1px solid var(--line);
+    margin-top:24px;
+  }
+  .foot-row{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+    font-family:'Poppins', sans-serif;
+    font-size:12.5px;
+    color:var(--muted);
+  }
+  footer a{ color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line); }
+  footer a:hover{ border-color:var(--ink); }
+
+  @media (max-width:600px){
+    h1{ font-size:30px; }
+    header{ padding:44px 0 32px 0; }
+    .card{ padding:22px 20px; }
+  }
+  .section-intro{
+    font-size:15px;
+    line-height:1.7;
+    max-width:580px;
+    margin:0 0 28px 0;
+    color:var(--ink);
+  }
+  .section-intro em{ font-style:italic; color:var(--muted); }
+
+  section.evidence{
+    padding:8px 0 8px 0;
+    border-top:1px solid var(--line);
+    margin-top:20px;
+  }
+  section.evidence .samples-label{ margin-top:36px; }
+  .evidence-lede{
+    font-family:'Poppins', sans-serif;
+    font-size:13.5px;
+    line-height:1.7;
+    color:var(--muted);
+    max-width:560px;
+    margin:0 0 22px 0;
+  }
+
+  .entry{
+    padding:18px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .entry:last-child{ border-bottom:none; }
+  .entry-name{
+    font-family:'Lora', serif;
+    font-weight:600;
+    font-size:16px;
+    color:var(--ink);
+    margin:0 0 4px 0;
+  }
+  .entry-role{
+    font-family:'Poppins', sans-serif;
+    font-size:10.5px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin:0 0 10px 0;
+  }
+  .entry-desc{
+    font-size:14.5px;
+    line-height:1.65;
+    color:var(--ink);
+    margin:0 0 10px 0;
+    max-width:600px;
+  }
+  .entry-link{
+    font-family:'Poppins', sans-serif;
+    font-size:12.5px;
+    color:var(--muted);
+  }
+  .entry-link a{ color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line); }
+  .entry-link a:hover{ border-color:var(--ink); }
+
+  .video-grid{
+    display:flex;
+    gap:20px;
+    margin:18px 0 6px 0;
+    flex-wrap:wrap;
+  }
+  .video-item{ flex:1; min-width:260px; }
+  .video-frame{
+    position:relative;
+    padding-top:56.25%;
+    background:var(--ink);
+    border-radius:3px;
+    overflow:hidden;
+    margin-bottom:10px;
+  }
+  .video-frame iframe{
+    position:absolute; top:0; left:0; width:100%; height:100%; border:0;
+  }
+  .video-label{
+    font-family:'Poppins', sans-serif;
+    font-size:10.5px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin:0 0 4px 0;
+  }
+  .video-title{
+    font-family:'Lora', serif;
+    font-weight:600;
+    font-size:15px;
+    color:var(--ink);
+    margin:0 0 8px 0;
+  }
+  .video-desc{
+    font-size:13.5px;
+    line-height:1.6;
+    color:var(--ink);
+    margin:0;
+  }
+
+  @media (max-width:600px){
+    .video-grid{ flex-direction:column; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">Jamie Arias</p>
+    <h1>Writing &amp; Editorial</h1>
+    <p class="role">Editorial judgment, distinctive voice, and consumer/business fluency &mdash; built across journalism, education, sales, and AI-native content systems.</p>
+    <p class="intro">Writing, ghostwriting, editorial direction, multimedia, and the systems behind the work. The formats change. The job stays remarkably consistent: find the signal, protect the voice, and make the idea land.</p>
+  </header>
+
+  <section class="samples">
+    <p class="samples-label">Featured Editorial</p>
+    <p class="section-intro">Three pieces, three voices, three audiences &mdash; deliberately selected to show three different editorial capabilities. <em>Range, not repetition, is the point.</em></p>
+
+    <a class="card card-1" href="HSR_Editorial_Spec_Sample_Jamie_Arias.pdf" target="_blank" rel="noopener">
+      <div class="swatch"></div>
+      <p class="card-title">&ldquo;GLP-1s and Strength Culture Look Like Opposites. Follow the Spending.&rdquo;</p>
+      <p class="card-context">EDITORIAL SPEC &middot; PREPARED FOR HSR MEDIA</p>
+      <p class="card-proves"><b>Proves:</b> the ability to see a cultural signal early, package it for a specific publication and audience, and build a case-study structure that earns a paywall instead of just gesturing at one.</p>
+      <p class="card-cta">Read the piece &rarr;</p>
+    </a>
+
+    <a class="card card-2" href="Portfolio_Sample_The_Signal_Nobody_Told_You_Was_Dying.pdf" target="_blank" rel="noopener">
+      <div class="swatch"></div>
+      <p class="card-title">&ldquo;The Signal Nobody Told You Was Dying&rdquo;</p>
+      <p class="card-context">GHOSTWRITTEN &middot; B2B SALES LEADERSHIP</p>
+      <p class="card-proves"><b>Proves:</b> original thesis development, rigorous use of outside research, intellectual honesty about where the argument's evidence runs out, and a preserved executive voice.</p>
+      <p class="card-cta">Read the piece &rarr;</p>
+    </a>
+
+    <a class="card card-3" href="Portfolio_Sample_Three_Questions_Wellness_Is_Actually_Asking.pdf" target="_blank" rel="noopener">
+      <div class="swatch"></div>
+      <p class="card-title">&ldquo;Three Questions Wellness Is Actually Asking&rdquo;</p>
+      <p class="card-context">GHOSTWRITTEN FOR DR. RON &middot; HIGHER PURPOSE WELLNESS SPA</p>
+      <p class="card-proves"><b>Proves:</b> a complete register change &mdash; warm, reflective, self-implicating &mdash; and the ability to hold a practitioner's worldview with care rather than impose an outside voice on it.</p>
+      <p class="card-cta">Read the piece &rarr;</p>
+    </a>
+  </section>
+
+  <section class="evidence">
+    <p class="samples-label">Live Editorial &amp; Publishing Work</p>
+
+    <div class="entry">
+      <p class="entry-name">Passion Publishing</p>
+      <p class="entry-role">Publisher &middot; Editorial Direction &middot; Author Platform</p>
+      <p class="entry-desc">Jamie serves as publisher for TJ's developing book series and the editorial ecosystem around it, including manuscript development and editing, author and series positioning, website/editorial copy, launch communications, and press-release development.</p>
+      <p class="entry-link"><a href="http://passionpublishing.co/" target="_blank" rel="noopener">passionpublishing.co</a></p>
+    </div>
+  </section>
+
+  <section class="evidence">
+    <p class="samples-label">The Systems Behind the Work</p>
+    <p class="evidence-lede">Jamie doesn't just use AI to create content. She architects the systems that decide how content is created, evaluated, improved, approved, and ultimately shipped.</p>
+
+    <div class="entry">
+      <p class="entry-name">GTM Systems Portfolio</p>
+      <p class="entry-role">AI-Enabled Research &middot; Workflow Orchestration &middot; Content Operations</p>
+      <p class="entry-desc">The architecture behind Jamie's content and marketing work: research, generation, review, and multichannel production connected into a single operating system.</p>
+      <p class="entry-link"><a href="https://jamielyntech.github.io/GTM/" target="_blank" rel="noopener">jamielyntech.github.io/GTM</a></p>
+    </div>
+
+    <div class="video-grid">
+      <div class="video-item">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/-qwwAKCuKDU" title="Building the Marketing OS" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="video-label">Video 01 &middot; AI Systems &middot; Marketing Automation &middot; Content Operations</p>
+        <p class="video-title">Building the Marketing OS</p>
+        <p class="video-desc">A walkthrough of an AI-enabled Marketing Operating System Jamie architected to connect discovery, content generation, independent review, and multichannel production into a repeatable marketing workflow.</p>
+      </div>
+      <div class="video-item">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/L7d9CnydX1Y" title="When the System Says No" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="video-label">Video 02 &middot; AI Review &middot; Editorial Judgment &middot; Human-in-the-Loop</p>
+        <p class="video-title">When the System Says No</p>
+        <p class="video-desc">The companion demonstration follows an article that doesn't make it through review. Instead of treating AI output as finished work, the system evaluates the content, rejects what isn't good enough, and keeps human editorial judgment inside the production process.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="evidence">
+    <p class="samples-label">Current Work</p>
+    <div class="entry">
+      <p class="entry-name">Bicker Table Advisory</p>
+      <p class="entry-desc">Jamie's current work in executive thought leadership, authority development, AI discovery, and AI-enabled editorial/content systems.</p>
+      <p class="entry-link"><a href="http://bickertable.com/" target="_blank" rel="noopener">bickertable.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot-row">
+      <span>Los Angeles, CA &middot; Remote</span>
+      <span><a href="mailto:jamielynarias@gmail.com">jamielynarias@gmail.com</a> &middot; <a href="https://linkedin.com/in/jamielynarias" target="_blank" rel="noopener">linkedin.com/in/jamielynarias</a></span>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
